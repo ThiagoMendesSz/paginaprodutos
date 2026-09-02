@@ -40,7 +40,8 @@ export default function App() {
 
           <View style={grupoentrada}>
             <View style={[caixaentrada, caixasemfoco]}>
-              <MaterialIcons name="attach-money" size={24} color="black" style={icone} />
+              <FontAwesome5 name="money-bill" size={24} color="black" />
+
               <TextInput 
                 style={entrada} 
                 placeholder="R$ 0,00" 
@@ -56,7 +57,6 @@ export default function App() {
           <View style={grupoentrada}>
             <View style={caixaentrada}>
               <MaterialCommunityIcons name="inbox-outline" size={28} color="#666" style={icone} />
-              <FontAwesome5 name="money-bill" size={24} color="black" />
               <TextInput 
                 style={entrada} 
                 placeholder="0" 
