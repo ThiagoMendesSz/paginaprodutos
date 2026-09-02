@@ -39,8 +39,9 @@ export default function App() {
           </View>
 
           <View style={grupoentrada}>
-            <View style={[caixaentrada, caixaentradainativa]}>
-<FontAwesome5 name="money-bill" size={24} color="black" />              <TextInput 
+            <View style={[caixaentrada, caixasemfoco]}>
+              <MaterialIcons name="attach-money" size={24} color="black" style={icone} />
+              <TextInput 
                 style={entrada} 
                 placeholder="R$ 0,00" 
                 placeholderTextColor="#888"
@@ -48,13 +49,14 @@ export default function App() {
               />
             </View>
             <View style={fundorotulo}>
-              <Text style={[rotulo, rotuloinativo]}>Preço</Text>
+              <Text style={[rotulo, rotulosemfoco]}>Preço</Text>
             </View>
           </View>
 
           <View style={grupoentrada}>
             <View style={caixaentrada}>
               <MaterialCommunityIcons name="inbox-outline" size={28} color="#666" style={icone} />
+              <FontAwesome5 name="money-bill" size={24} color="black" />
               <TextInput 
                 style={entrada} 
                 placeholder="0" 
@@ -86,12 +88,12 @@ const {
   formulario, 
   grupoentrada, 
   caixaentrada, 
-  caixaentradainativa, 
+  caixasemfoco, 
   icone, 
   entrada, 
   fundorotulo, 
   rotulo, 
-  rotuloinativo, 
+  rotulosemfoco, 
   botao, 
   textobotao 
 } = StyleSheet.create({
@@ -132,7 +134,7 @@ const {
     height: 60,
     backgroundColor: 'transparent',
   },
-  caixaentradainativa: {
+  caixasemfoco: {
     borderColor: '#888', 
   },
   icone: {
@@ -156,7 +158,7 @@ const {
     fontSize: 14,
     fontWeight: '500',
   },
-  rotuloinativo: {
+  rotulosemfoco: {
     color: '#666',
   },
   botao: {
