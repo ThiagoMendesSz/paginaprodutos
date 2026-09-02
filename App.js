@@ -9,6 +9,8 @@ import {
 } from 'react-native';
 import { MaterialIcons, MaterialCommunityIcons } from '@expo/vector-icons';
 import AntDesign from '@expo/vector-icons/AntDesign';
+import Entypo from '@expo/vector-icons/Entypo';
+import FontAwesome5 from '@expo/vector-icons/FontAwesome5';
 
 export default function App() {
   return (
@@ -24,7 +26,7 @@ export default function App() {
           
           <View style={grupoentrada}>
             <View style={caixaentrada}>
-              <MaterialCommunityIcons name="tag-outline" size={28} color="#666" style={icone} />
+              <Entypo name="price-tag" size={24} color="black" />
               <TextInput 
                 style={entrada} 
                 placeholder="Nome do Produto" 
@@ -38,8 +40,7 @@ export default function App() {
 
           <View style={grupoentrada}>
             <View style={[caixaentrada, caixaentradainativa]}>
-              <MaterialIcons name="attach-money" size={28} color="#666" style={icone} />
-              <TextInput 
+<FontAwesome5 name="money-bill" size={24} color="black" />              <TextInput 
                 style={entrada} 
                 placeholder="R$ 0,00" 
                 placeholderTextColor="#888"
